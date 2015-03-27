@@ -41,7 +41,7 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
     protected $_sectionUpdateFunctions = array(
         'payment-method'  => '_getPaymentMethodsHtml',
         'shipping-method' => '_getShippingMethodsHtml',
-        'review'          => '_getReviewHtml',
+        'review'                => '_getReviewHtml',
     );
 
     /**
@@ -361,7 +361,7 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
      * Save checkout billing address
      */
     public function saveBillingAction()
-    {	
+    {
         if ($this->_expireAjax()) {
             return;
         }
@@ -371,13 +371,13 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
 
             if (isset($data['email'])) {
                 $data['email'] = trim($data['email']);
-            } 
+            }
 			$result = $this->getOnepage()->saveBilling($data, $customerAddressId);
 			if ($customerAddressId){
                           $customerAddress = Mage::getModel('customer/address')->load($customerAddressId);
                           $data['region_id'] = $customerAddress['region_id'];
                      }
-			
+
 				if (!isset($result['error'])) {
                 if ($this->getOnepage()->getQuote()->isVirtual()) {
                     $result['goto_section'] = 'payment';
@@ -414,8 +414,8 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
 						$productName = implode(', ',$productName);
 						$errormessage = $this->__(' The following product(s) (%s) are not available in your country ('.$data['country_id'].').', $productName);
 						Mage::getSingleton('checkout/session')->addError($errormessage);
-					} 
-					
+					}
+
 					elseif(preg_match('/\s*((P(OST)?.?\s*(O(FF(ICE)?)?)?.?\s+(B(IN|OX))?)|B(IN|OX))/i', implode(",", $data['street']))) {
 						$result = array(
 									'goto_section' => 'shipping'
@@ -436,8 +436,8 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
 				else {
                     $result['goto_section'] = 'shipping';
                 }
-            } 
-			
+            }
+
             $this->getResponse()->setBody(Mage::helper('core')->jsonEncode($result));
         }
     }
@@ -480,7 +480,7 @@ class Mage_Checkout_OnepageController extends Mage_Checkout_Controller_Action
 					$productName = implode(', ',$productName);
 					$errormessage = $this->__(' The following product(s) (%s) are not available in your country ('.$data['country_id'].').', $productName);
 					Mage::getSingleton('checkout/session')->addError($errormessage);
-				} 
+				}
 				elseif(preg_match('/\s*((P(OST)?.?\s*(O(FF(ICE)?)?)?.?\s+(B(IN|OX))?)|B(IN|OX))/i', implode(",", $data['street']))) {
 						$result = array(
 									'error' => 1,
