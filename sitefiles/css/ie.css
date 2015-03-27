@@ -1,0 +1,47 @@
+.tabset li a{
+ float:left;
+ width:auto;
+ height:auto;
+}
+.tabset li a span {
+ margin-top: expression(this.parentNode.offsetHeight > this.offsetHeight ? (this.parentNode.offsetHeight-this.offsetHeight + "px") : "0");
+ float:left;
+ width:auto;
+}
+.tabset li a span em { 
+ margin-top: expression(this.parentNode.offsetHeight > this.offsetHeight ? ((this.parentNode.offsetHeight-this.offsetHeight)/2 + "px") : "0"); 
+ float:left;
+}
+
+#add-nav li {background-image: expression( (this===this.parentNode.childNodes[0]) ? "none" : "auto");}
+
+* html .search-form .row{
+	background:url(none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-search-form.png', sizingmethod='crop');
+}
+* html #nav{
+	background:url(none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-nav.png', sizingmethod='crop');
+}
+* html .container .b{
+	background:url(none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-container-b.png', sizingmethod='crop');
+}
+* html .paging-hold li a{
+	background:url(none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-switcher.png', sizingmethod='crop');
+}
+* html .paging-hold li a:hover,
+* html .paging-hold li a.active{
+	background:url(none.gif);
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/bg-switcher-active.png', sizingmethod='crop');
+	cursor:pointer;
+}
+* html .png{
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "images/none.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+);
+}

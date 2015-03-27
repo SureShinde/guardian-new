@@ -1,0 +1,983 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+
+ $AC4010 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4010E');
+ $AC4020 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4020');
+ $AC4850PT = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4850PT');
+ $AC4100 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4100');
+ $AC4220 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4220');
+ $AC4825 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC4825E');
+ $AC5000 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC5000E');
+ $AC5250PT = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC5250PT');
+$AC5350W = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC5350W');
+$AC5350B = Mage::getModel('catalog/product')->loadByAttribute('sku', 'AC5350BCA');
+
+ $FLT4825S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4825+S03');
+ $FLT4825S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4825+S04');
+ $FLT4825S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4825+S06');
+ $FLT4825S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4825+S09');
+ $FLT4825S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4825+S12');
+
+ $FLT4850PTS03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4850PT+S03');
+ $FLT4850PTS04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4850PT+S04');
+ $FLT4850PTS06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4850PT+S06');
+ $FLT4850PTS09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4850PT+S09');
+ $FLT4850PTS12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4850PT+S12');
+
+  $FLT5250PTS03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5250PT+S03');
+ $FLT5250PTS04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5250PT+S04');
+ $FLT5250PTS06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5250PT+S06');
+ $FLT5250PTS09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5250PT+S09');
+ $FLT5250PTS12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5250PT+S12');
+
+
+  $FLT5000S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5000+S03');
+ $FLT5000S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5000+S04');
+ $FLT5000S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5000+S06');
+ $FLT5000S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5000+S09');
+ $FLT5000S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT5000+S12');
+
+  $FLT4220S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4220+S03');
+ $FLT4220S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4220+S04');
+ $FLT4220S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4220+S06');
+ $FLT4220S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4220+S09');
+ $FLT4220S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4220+S12');
+
+  $FLT4000S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4000+S03');
+ $FLT4000S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4000+S04');
+ $FLT4000S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4000+S06');
+ $FLT4000S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4000+S09');
+ $FLT4000S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4000+S12');
+
+  $FLT4010S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4010+S03');
+ $FLT4010S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4010+S04');
+ $FLT4010S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4010+S06');
+ $FLT4010S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4010+S09');
+ $FLT4010S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4010+S12');
+
+
+  $FLT4100S03 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4100+S03');
+ $FLT4100S04 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4100+S04');
+ $FLT4100S06 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4100+S06');
+ $FLT4100S09 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4100+S09');
+ $FLT4100S12 = Mage::getModel('catalog/product')->loadByAttribute('sku', 'FLT4100+S12');
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<?php $bodyClasses = $this->getBodyClass() .' '. $this->helper('ultimo')->getThemeBodyClasses(); ?>
+<body class="<?php echo $bodyClasses; ?>">
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div id="root-wrapper">
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+            <div class="main-before-top-container"><?php echo $this->getChildHtml('main_before_top') ?></div>
+            <div class="main container">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="preface grid-full in-col1"><?php echo $this->getChildHtml('preface') ?></div>
+                <div class="col-main grid-full in-col1">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+					<div class="page-title">
+						<h1>Auto-Ship Filter Subscription Service</h1>
+					</div>
+					<div class="std">
+
+						<div class="one_third">
+							<div class="subscription_steps">
+								<div class="icon_step"> <img src="/skin/frontend/guardian/default/images/find-step.png"></div>
+								<div class="step_head">1. Choose</div>
+								<div class="step_desc"> Choose your machine from those shown below. </div>
+							</div>
+
+							<div class="subscription_steps">
+								<div class="icon_step"> <img src="/skin/frontend/guardian/default/images/calendar-step.png"></div>
+								<div class="step_head">2. Find</div>
+								<div class="step_desc"> Find your preferred filter from the possible options and select how often your filter is shipped. </div>
+							</div>
+
+							<div class="subscription_steps">
+								<div class="icon_step"> <img src="/skin/frontend/guardian/default/images/ship-step.png"></div>
+								<div class="step_head">3. Receive</div>
+								<div class="step_desc"> Receive <span>FREE</span> shipping & 10% off each filter. </div>
+							</div>
+						</div>
+
+						<div class="two_thirds">
+							<p>To maintain good air quality, we recommend that you replace your air purifier filter once every 3-6 months. This will vary based on how frequently you use your air purifier. Replacing your filter will elongate the purifier's effectiveness and make your home environment healthier and happier.</p>
+
+							<p>Remembering to replace your filter is difficult, and placing the same order every few months can be a burden. We recognize this, so we have made the replacement process easier than ever with AutoShip. This convenient service automatically saves you time & money. When you subscribe, you will receive 10% off all filters and FREE shipping on each order. </p>
+
+							<p>When you sign up for AutoShip, your first filter replacement will ship immediately. Your following replacement filters will be shipped however often you wish, anywhere from every 3 months to every 12 months. We recommend once every 3-6 months to keep your air purifier working like new. You can end your subscription at any time with 30 days' notice prior to your next shipment date. </p>
+
+							<p>Stop worrying about replacement filters, and enjoy your happy and healthy home! </p>
+						</div>
+
+						<div class="filterBy">
+							<div class="machine_wrap"><h3> Choose Your Machine </h3></div>
+							
+							<div class="machine_list">
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4010"><img src="<?php echo $this->helper('catalog/image')->init($AC4010, 'small_image'); ?>" alt=""> AC4010</a>
+								</div>
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4020"><img src="<?php echo $this->helper('catalog/image')->init($AC4020, 'small_image'); ?>" alt=""> AC4020</a>
+								</div>
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4100"><img src="<?php echo $this->helper('catalog/image')->init($AC4100, 'small_image'); ?>" alt=""> AC4100</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4220"><img src="<?php echo $this->helper('catalog/image')->init($AC4220, 'small_image'); ?>" alt=""> AC4220</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4825"><img src="<?php echo $this->helper('catalog/image')->init($AC4825, 'small_image'); ?>" alt=""> AC4825</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC4850PT"><img src="<?php echo $this->helper('catalog/image')->init($AC4850PT, 'small_image'); ?>" alt=""> AC4850PT</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC5000"><img src="<?php echo $this->helper('catalog/image')->init($AC5000, 'small_image'); ?>" alt=""> AC5000</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC5250PT"><img src="<?php echo $this->helper('catalog/image')->init($AC5250PT, 'small_image'); ?>" alt=""> AC5250PT</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC5350B"><img src="<?php echo $this->helper('catalog/image')->init($AC5350B, 'small_image'); ?>" alt=""> AC5350B</a>
+								</div>
+
+								<div class="img">
+									<a href="javascript:void(0);" id="AC5350W"><img src="<?php echo $this->helper('catalog/image')->init($AC5350W, 'small_image'); ?>" alt=""> AC5350W</a>
+								</div>
+							</div>
+						</div>
+
+						<div id="AC4850PT" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4850PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info"><strong>FLT4850PT</strong> <br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type B Pet</strong></span>	<br/>
+											<span style="font-size:14px;">SKU: <strong>AC4850PT</strong></span><br/>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$54.99</span></span>
+											<br>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4850PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4850PTS03">Every 3 Months</option>
+											<option value="FLT4850PTS04">Every 4 Months</option>
+											<option value="FLT4850PTS06">Every 6 Months</option>
+											<option value="FLT4850PTS09">Every 9 Months</option>
+											<option value="FLT4850PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS03) ?>" id="FLT4850PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS04) ?>" id="FLT4850PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS06) ?>" id="FLT4850PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS09) ?>" id="FLT4850PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS12) ?>" id="FLT4850PTS12"> 
+										<button class="button btn-cart" onclick="" name="FLT4850PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4825S03, 'small_image'); ?>" alt="">
+										<div class="product_info"><strong>FLT4825</strong> <br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type B</strong></span>	<br/>
+											<span style="font-size:14px;">SKU: <strong>AC4850PT</strong></span><br/>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$34.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $31.49</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4825" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4825S03">Every 3 Months</option>
+											<option value="FLT4825S04">Every 4 Months</option>
+											<option value="FLT4825S06">Every 6 Months</option>
+											<option value="FLT4825S09">Every 9 Months</option>
+											<option value="FLT4825S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S03) ?>" id="FLT4825S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S04) ?>" id="FLT4825S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S06) ?>" id="FLT4825S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S09) ?>" id="FLT4825S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S12) ?>" id="FLT4825S12">
+										<button class="button btn-cart" onclick="" name="FLT4825"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC4825" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+								
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4850PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info"><strong>FLT4850PT</strong> <br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type B Pet</strong></span>	<br/>
+											<span style="font-size:14px;">SKU: <strong>AC4850PT</strong></span><br/>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$54.99</span></span>
+											<br>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4850PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4850PTS03">Every 3 Months</option>
+											<option value="FLT4850PTS04">Every 4 Months</option>
+											<option value="FLT4850PTS06">Every 6 Months</option>
+											<option value="FLT4850PTS09">Every 9 Months</option>
+											<option value="FLT4850PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS03) ?>" id="FLT4850PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS04) ?>" id="FLT4850PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS06) ?>" id="FLT4850PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS09) ?>" id="FLT4850PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4850PTS12) ?>" id="FLT4850PTS12"> 
+										<button class="button btn-cart" onclick="" name="FLT4850PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4825S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT4825</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type B</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC4825</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$34.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $31.49</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4825" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4825S03">Every 3 Months</option>
+											<option value="FLT4825S04">Every 4 Months</option>
+											<option value="FLT4825S06">Every 6 Months</option>
+											<option value="FLT4825S09">Every 9 Months</option>
+											<option value="FLT4825S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S03) ?>" id="FLT4825S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S04) ?>" id="FLT4825S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S06) ?>" id="FLT4825S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S09) ?>" id="FLT4825S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4825S12) ?>" id="FLT4825S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT4825"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC4010" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4010S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT4010</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type A</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC4010</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$24.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$19.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $17.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4010" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4010S03">Every 3 Months</option>
+											<option value="FLT4010S04">Every 4 Months</option>
+											<option value="FLT4010S06">Every 6 Months</option>
+											<option value="FLT4010S09">Every 9 Months</option>
+											<option value="FLT4010S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S03) ?>" id="FLT4010S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S04) ?>" id="FLT4010S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S06) ?>" id="FLT4010S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S09) ?>" id="FLT4010S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S12) ?>" id="FLT4010S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT4010"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC4020" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4010S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT4010</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type A</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC4010</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$24.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$19.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $17.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4020" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4020S03">Every 3 Months</option>
+											<option value="FLT4020S04">Every 4 Months</option>
+											<option value="FLT4020S06">Every 6 Months</option>
+											<option value="FLT4020S09">Every 9 Months</option>
+											<option value="FLT4010S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S03) ?>" id="FLT4010S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S04) ?>" id="FLT4010S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S06) ?>" id="FLT4010S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S09) ?>" id="FLT4010S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4010S12) ?>" id="FLT4010S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT4010"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC4100" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4100S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT4100</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type E</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC4100</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$29.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$24.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $22.49</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4100" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4100S03">Every 3 Months</option>
+											<option value="FLT4100S04">Every 4 Months</option>
+											<option value="FLT4100S06">Every 6 Months</option>
+											<option value="FLT4100S09">Every 9 Months</option>
+											<option value="FLT4100S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4100S03) ?>" id="FLT4100S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4100S04) ?>" id="FLT4100S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4100S06) ?>" id="FLT4100S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4100S09) ?>" id="FLT4100S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4100S12) ?>" id="FLT4100S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT4100"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC4220" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT4220S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT4220</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type D</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC4220</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$39.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$29.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $26.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT4220" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT4220S03">Every 3 Months</option>
+											<option value="FLT4220S04">Every 4 Months</option>
+											<option value="FLT4220S06">Every 6 Months</option>
+											<option value="FLT4220S09">Every 9 Months</option>
+											<option value="FLT4220S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4220S03) ?>" id="FLT4220S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4220S04) ?>" id="FLT4220S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4220S06) ?>" id="FLT4220S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4220S09) ?>" id="FLT4220S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT4220S12) ?>" id="FLT4220S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT4220"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC5000" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5250PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5250PT</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C-PET</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5250PT</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$59.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$44.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $40.50</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5250PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5250PTS03">Every 3 Months</option>
+											<option value="FLT5250PTS04">Every 4 Months</option>
+											<option value="FLT5250PTS06">Every 6 Months</option>
+											<option value="FLT5250PTS09">Every 9 Months</option>
+											<option value="FLT5250PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS03) ?>" id="FLT5250PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS04) ?>" id="FLT5250PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS06) ?>" id="FLT5250PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS09) ?>" id="FLT5250PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS12) ?>" id="FLT5250PTS12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5250PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5000S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5000</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5000</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5000" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5000S03">Every 3 Months</option>
+											<option value="FLT5000S04">Every 4 Months</option>
+											<option value="FLT5000S06">Every 6 Months</option>
+											<option value="FLT5000S09">Every 9 Months</option>
+											<option value="FLT5000S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S03) ?>" id="FLT5000S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S04) ?>" id="FLT5000S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S06) ?>" id="FLT5000S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S09) ?>" id="FLT5000S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S12) ?>" id="FLT5000S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5000"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC5350B" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+								
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5250PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5250PT</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C-PET</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5250PT</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$59.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$44.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $40.50</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5250PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5250PTS03">Every 3 Months</option>
+											<option value="FLT5250PTS04">Every 4 Months</option>
+											<option value="FLT5250PTS06">Every 6 Months</option>
+											<option value="FLT5250PTS09">Every 9 Months</option>
+											<option value="FLT5250PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS03) ?>" id="FLT5250PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS04) ?>" id="FLT5250PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS06) ?>" id="FLT5250PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS09) ?>" id="FLT5250PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS12) ?>" id="FLT5250PTS12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5250PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5000S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5000</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5350B</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5000" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5000S03">Every 3 Months</option>
+											<option value="FLT5000S04">Every 4 Months</option>
+											<option value="FLT5000S06">Every 6 Months</option>
+											<option value="FLT5000S09">Every 9 Months</option>
+											<option value="FLT5000S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S03) ?>" id="FLT5000S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S04) ?>" id="FLT5000S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S06) ?>" id="FLT5000S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S09) ?>" id="FLT5000S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S12) ?>" id="FLT5000S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5000"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC5350W" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5250PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5250PT</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C-PET</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5250PT</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$59.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$44.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $40.50</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5250PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5250PTS03">Every 3 Months</option>
+											<option value="FLT5250PTS04">Every 4 Months</option>
+											<option value="FLT5250PTS06">Every 6 Months</option>
+											<option value="FLT5250PTS09">Every 9 Months</option>
+											<option value="FLT5250PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS03) ?>" id="FLT5250PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS04) ?>" id="FLT5250PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS06) ?>" id="FLT5250PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS09) ?>" id="FLT5250PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS12) ?>" id="FLT5250PTS12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5250PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5000S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5000</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5350W</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5000" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5000S03">Every 3 Months</option>
+											<option value="FLT5000S04">Every 4 Months</option>
+											<option value="FLT5000S06">Every 6 Months</option>
+											<option value="FLT5000S09">Every 9 Months</option>
+											<option value="FLT5000S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S03) ?>" id="FLT5000S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S04) ?>" id="FLT5000S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S06) ?>" id="FLT5000S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S09) ?>" id="FLT5000S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S12) ?>" id="FLT5000S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5000"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div id="AC5250PT" class="purifiers">
+							<div class="headRow"> 
+								<ul>
+									<li>Product</li>
+									<li>Price</li>
+									<li>Savings</li>
+									<li>Delivery Frequency</li>
+								</ul>
+							</div>
+
+							<div class="itemRow">
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5250PTS03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5250PT</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C-PET</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5250PT</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$59.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$44.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $40.50</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5250PT" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5250PTS03">Every 3 Months</option>
+											<option value="FLT5250PTS04">Every 4 Months</option>
+											<option value="FLT5250PTS06">Every 6 Months</option>
+											<option value="FLT5250PTS09">Every 9 Months</option>
+											<option value="FLT5250PTS12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS03) ?>" id="FLT5250PTS03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS04) ?>" id="FLT5250PTS04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS06) ?>" id="FLT5250PTS06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS09) ?>" id="FLT5250PTS09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5250PTS12) ?>" id="FLT5250PTS12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5250PT"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+
+								<ul>
+									<li>
+										<img src="<?php echo $this->helper('catalog/image')->init($FLT5000S03, 'small_image'); ?>" alt="">
+										<div class="product_info">
+											<strong>FLT5000</strong><br/>
+											<span style="color:#73b64c; font-size:14px;">Filter: <strong>Type C</strong></span><br/>
+											<span style="color:#73b64c; font-size:14px;">SKU: <strong>AC5000</strong></span>
+										</div>
+									</li>
+									<li>
+										<div class="price-box">
+											<span class="regular-price" id="product-price-39">			
+											<span class="old-price" id="product-price-39">MSRP: <span class="price">$49.99</span></span>
+											<br/>
+                                            <span class="price">Normal: <span style="font-style:line-through;">$39.99</span></span>
+											<br/>
+											<span style="color:red; font-weight:bold; font-size:20px;">Your Price: $35.99</span></span>
+										</div>
+									</li>
+									<li>
+										<img src="/skin/frontend/guardian/default/images/savings-pic.png">
+									</li>
+									<li>
+										<select name="FLT5000" id="filterselector">
+											<option value="">How Often?</option>
+											<option value="FLT5000S03">Every 3 Months</option>
+											<option value="FLT5000S04">Every 4 Months</option>
+											<option value="FLT5000S06">Every 6 Months</option>
+											<option value="FLT5000S09">Every 9 Months</option>
+											<option value="FLT5000S12">Every 12 Months</option>
+										</select>
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S03) ?>" id="FLT5000S03"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S04) ?>" id="FLT5000S04"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S06) ?>" id="FLT5000S06"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S09) ?>" id="FLT5000S09"> 
+										<input type="hidden" value="<?php echo $this->helper('checkout/cart')->getAddUrl($FLT5000S12) ?>" id="FLT5000S12">
+										<button class="button btn-cart" onclick="NoFrequency();" name="FLT5000"><span> <span> Subscribe </span> </span> </button> 
+									</li>
+								</ul>
+							</div>
+						</div>
+
+
+					</div>
+                </div>
+                <div class="postscript grid-full in-col1"><?php echo $this->getChildHtml('postscript') ?></div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+</div> <!-- end: root-wrapper -->
+<?php echo $this->getAbsoluteFooter() ?>
+<script type="text/javascript" src="/skin/frontend/guardian/default/js/main.js"></script>
+</body>
+</html>

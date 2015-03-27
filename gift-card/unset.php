@@ -1,0 +1,1 @@
+<?php setcookie("Generator","Approved",time()-3600, '/', NULL, 0); echo $_COOKIE['Generator'];?>

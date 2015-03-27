@@ -1,0 +1,122 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+
+$tclip =  Mage::getModel('catalog/product')->load(79);
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->getLang() ?>" lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildHtml('head') ?>
+<script type="text/javascript" src="/skin/frontend/tclip/default/js/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="/skin/frontend/tclip/default/js/fancybox/jquery.fancybox.css">
+</head>
+<?php $bodyClasses = $this->getBodyClass() .' '. $this->helper('ultimo')->getThemeBodyClasses(); ?>
+<body class="<?php echo $bodyClasses; ?>">
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div id="root-wrapper">
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main-container col1-layout">
+		
+			<div class="container clearfix">
+<div class="main-block">
+			<div class="visual-block">
+				<a href="/t-clip-cigar-and-club-holder-with-ball-marker.html"><img src="/images/img-1.jpg" alt="some-image"></a>
+				<div class="imgThumbs">
+					<a class="fancybox" rel="gallery1" href="/images/tclip/1.jpg"><img src="/images/tclip/1.jpg"></a>
+					<a class="fancybox" rel="gallery1" href="/images/tclip/2.jpg"><img src="/images/tclip/2.jpg"></a>
+					<a class="fancybox" rel="gallery1" href="/images/tclip/3.jpg"><img src="/images/tclip/3.jpg"></a>
+					<a class="fancybox" rel="gallery1" href="/images/tclip/4.jpg"><img src="/images/tclip/4.jpg"></a>
+					<a class="fancybox" rel="gallery1" href="/images/tclip/5.jpg"><img src="/images/tclip/5.jpg"></a>
+				</div>
+			</div>
+			<div class="features-block">
+				<div class="features-box">
+					<h2 class="main-title">Golf T-Clip Features:</h2>
+					<br/>
+					<ul class="list_sub">
+						<li>Holds clubs, cigars and cigarettes.</li>
+						<li>Carry your T-Clip on your clubs, pocket, visor, hat or belt loop.</li>
+						<li>Keep your items dry and free of pesticides and fertilizers</li>
+						<li>Easily fits in tee holder on cart.</li>
+						<li>Conveniently includes a ball marker.</li>
+						<li>Easy to remove ball marker!</li>
+					</ul>
+				</div>
+				<div class="info-block-b">
+					<div class="info-block-t">
+						<div class="info-block-c">
+							<p class="price"><span style="text-decoration:line-through; font-size:13px; color:#666;">MSRP: $19.99</span></p>
+							<p><span style="font-weight:bold; font-size:17px; color:#73b64c;">Price: $14.99</span></p>
+							<br/>
+			                    <input type="hidden" name="action" value="additem">
+                    			<input type="hidden" name="idProduct" value="89">
+								<button class="button btn-cart v-center" onclick="parent.location='<?php echo $this->helper('checkout/cart')->getAddUrl($tclip) ?>';"> <span> <span> Add To Cart </span> </span> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div></div>
+<div class="clear"> </div>
+		
+                <div class="postscript grid-full in-col1"><?php echo $this->getChildHtml('postscript') ?></div>
+            </div>
+        </div>
+        <?php echo $this->getChildHtml('footer') ?>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+</div> <!-- end: root-wrapper -->
+<?php echo $this->getAbsoluteFooter() ?>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery(".fancybox").fancybox({
+		width : '800',
+		height : '600',
+		prevEffect	: 'none',
+		nextEffect	: 'none',
+		helpers	: {
+			title	: {
+				type: 'outside'
+			},
+			thumbs	: {
+				width	: 50,
+				height	: 50
+			}
+		}
+	});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1024 @@
+
+/* UNIVERSAL STYLES
+================================================================================*/
+
+html, body{
+	padding:0;
+	margin:0;
+	background-color:#ccc;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	}
+	
+/*fixing firefox outline*/
+
+a:active{
+	outline:none;
+	}
+	
+:focus{
+	outline:none;
+	}
+	
+img, form{
+	padding:0;
+	margin:0;
+	border:none;
+	}
+	
+	
+	
+	
+
+	
+	
+	
+
+/* NAVIGATION STYLES
+================================================================================*/
+
+#nav{
+	background:url(../images/nav_bg.jpg) repeat-x 0 0;
+	width:940px;
+	height:33px;
+	padding:2px 0 0 0;
+	}
+	
+#nav ul{
+	padding:0 0 0 24px;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+#nav ul li{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	float:left;
+	}
+	
+.divider{
+	float:left;
+	background:url(../images/nav_divider.jpg) no-repeat 0 0;
+	width:21px;
+	height:33px;
+	}	
+	
+#all_dept a:link, #all_dept a:visited{
+	background:url(../images/all_dept.jpg) no-repeat 0 0;
+	width:111px;
+	height:33px;
+	display:block;
+	}
+	
+#air_sani a:link, #air_sani a:visited{
+	background:url(../images/air_sanitization.jpg) no-repeat 0 0;
+	width:108px;
+	height:33px;
+	display:block;
+	}
+	
+#air_puri a:link, #air_puri a:visited{
+	background:url(../images/air_purification.jpg) no-repeat 0 0;
+	width:103px;
+	height:33px;
+	display:block;
+	}
+	
+#heat a:link, #heat a:visited{
+	background:url(../images/heat.jpg) no-repeat 0 0;
+	width:118px;
+	height:33px;
+	display:block;
+	}
+	
+#humid a:link, #humid a:visited{
+	background:url(../images/humidification.jpg) no-repeat 0 0;
+	width:103px;
+	height:33px;
+	display:block;
+	}
+	
+#floor a:link, #floor a:visited{
+	background:url(../images/floor.jpg) no-repeat 0 0;
+	width:76px;
+	height:33px;
+	display:block;
+	}
+	
+#shaver a:link, #shaver a:visited{
+	background:url(../images/shaver.jpg) no-repeat 0 0;
+	width:59px;
+	height:33px;
+	display:block;
+	}
+	
+#clear a:link, #clear a:visited{
+	background:url(../images/clearance.jpg) no-repeat 0 0;
+	width:75px;
+	height:33px;
+	display:block;
+	}
+	
+
+
+
+
+
+
+
+/*TEXT STYLES
+================================================================================*/
+
+h1{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:bold 24px Arial, Helvetica, sans-serif;
+	color:#003d95;
+	letter-spacing:-0.5px;
+	}
+	
+h2{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	float:left;
+	width:300px;
+	font:bold 24px Arial, Helvetica, sans-serif;
+	color:#60a82e;
+	}
+	
+h3{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:normal 22px Arial, Helvetica, sans-serif;
+	color:#459800;
+	}
+
+.bigbold{
+	font:bold 37px Arial, Helvetica, sans-serif;
+	letter-spacing:-1px;
+	}
+	
+h4{
+	padding:0 0 16px 0;
+	margin:0;
+	line-height:100%;
+	font:bold 18px Arial, Helvetica, sans-serif;
+	color:#459800;
+	}
+
+.blue_text{
+	color:#005ca4;
+	}
+
+
+
+
+
+
+
+
+/* LAYOUT STYLES
+================================================================================*/
+	
+#container{
+	padding:0;
+	margin:0 auto 0 auto;
+	width:940px;
+	background-color:#fff;
+	}
+	
+#header{
+	width:940px;
+	}
+
+#header_main{
+	background:#fcfdfb url(../images/header_bg.jpg) repeat-x 0 0;
+	padding:0 0 11px 0;
+	width:940px;
+	}
+	
+#logo{
+	float:left;
+	width:391px;
+	padding:24px 0 0 54px;
+	}
+	
+#header_right{
+	float:left;
+	width:495px;
+	}
+
+#topnav_outer{
+	width:495px;
+	}
+	
+#topnav_left{
+	background:url(../images/nav_left.jpg) no-repeat 0 0;
+	width:12px;
+	height:25px;
+	float:left;
+	}
+	
+#topnav{
+	float:left;
+	width:443px;
+	background-color:#0066af;
+	height:19px;
+	padding:6px 0 0 0;
+	}
+	
+#topnav_right{
+	float:left;
+	background:url(../images/nav_right.jpg) no-repeat 0 0;
+	width:12px;
+	height:25px;
+	}
+	
+.cleardiv{
+	clear:both;
+	font-size:0;
+	height:0;
+	}
+	
+#toplinks_left{
+	float:left;
+	width:130px;
+	}
+	
+#toplinks_middle{
+	float:left;
+	width:189px;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	}
+	
+#toplinks_right{
+	float:left;
+	width:123px;
+	}
+	
+.toplinks{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+.toplinks li{
+	padding:0;
+	margin:0;
+	display:inline;
+	font:bold 11px Arial, Helvetica, sans-serif;
+	color:#fff;
+	}
+	
+.toplinks li em{
+	font-style:normal;
+	padding:0 2px 0 6px;
+	}
+	
+.toplinks li a:link, .toplinks li a:visited{
+	text-decoration:none;
+	color:#fff;
+	}
+	
+.toplinks li a:hover{
+	text-decoration:underline;
+	}
+	
+#ph{
+	text-align:right;
+	height:20px;
+	padding:10px 40px 0 0;
+	font:bold 18px "Trebuchet MS";
+	color:#007cd5;
+	}
+	
+#search{
+	width:275px;
+	padding:17px 9px 0 184px;
+	}
+	
+#search_left{
+	float:left;
+	width:55px;
+	font:bold 15px "Trebuchet MS";
+	color:#717276;
+	padding:3px 0 0 0;
+	}
+	
+#search_right{
+	float:left;
+	width:220px;
+	}
+	
+.txtbox{
+	border:none;
+	background:url(../images/txtbox_bg.jpg) no-repeat 0 0;
+	width:177px;
+	height:19px;
+	float:left;
+	margin:0 6px 0 0;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#333;
+	padding:6px 4px 0 4px;
+	}
+
+.go_btn{
+	float:left;
+	width:26px;
+	}
+	
+#bodyarea{
+	background:#fff url(../images/bodyarea_bg.jpg) no-repeat 0 0;
+	width:903px;
+	padding:26px 22px 0 15px;
+	}
+	
+#leftcol{
+	float:left;
+	width:183px;
+	padding:4px 0 0 0;
+	}
+	
+#leftnav{
+	width:181px;
+	border:1px solid #c1c4be;
+	}
+	
+.slidebox{
+	width:181px;
+	}
+	
+.slidebox_heading{
+	background:url(../images/leftmenu_bg.jpg) repeat-x 0 0;
+	height:21px;
+	padding:3px 0 0 8px;
+	}
+	
+.slidebox_heading a:link, .slidebox_heading a:visited{
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	}
+	
+.slidebox_heading a:hover{
+	text-decoration:none;
+	}
+	
+.slidebox_content{
+	background:#fff url(../images/submenu_bg.jpg) repeat-x 0 0;
+	width:165px;
+	padding:11px 8px 5px 8px;
+	}
+	
+.slidebox_content ul{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+.slidebox_content ul li{
+	padding:0 0 9px 0;
+	margin:0;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#373737;
+	line-height:100%;
+	}
+	
+.slidebox_content ul li a:link, .slidebox_content ul li a:visited{
+	color:#373737;
+	text-decoration:none;
+	}
+	
+.slidebox_content ul li a:hover{
+	text-decoration:underline;
+	}
+	
+#rightcol{
+	float:right;
+	width:687px;
+	}
+
+#product_detail{
+	border:1px solid #c1c4be;
+	width:661px;
+	margin:0 0 18px 0;
+	padding:8px 12px 10px 12px;
+	}
+	
+#current_page{
+	padding:0 0 12px 0;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#003d95;
+	}
+	
+#current_page a:link, #current_page a:visited{
+	text-decoration:none;
+	color:#003d95;
+	}
+	
+#current_page a:hover{
+	text-decoration:underline;
+	}
+	
+#product_buttons{
+	width:661px;
+	}
+	
+#product_buttons_left{
+	float:left;
+	width:85px;
+	}
+	
+#product_buttons_right{
+	float:right;
+	width:85px;
+	text-align:right;
+	}
+	
+#product_content{
+	padding:26px 0 0 0;
+	width:661px;
+	}	
+	
+#product_content_left{
+	float:left;
+	width:215px;
+	text-align:center;
+	}
+	
+#product_content_left p{
+	padding:0 0 10px 0;
+	margin:0;
+	line-height:130%;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#303030;
+	}
+	
+#product_content_right{
+	float:left;
+	width:420px;
+	}
+	
+#product_description{
+	width:420px;
+	}
+	
+.model{
+	padding:0 0 7px 0;
+	margin:0;
+	line-height:100%;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#717276;
+	}
+	
+.product_row{
+	padding:0;
+	width:285px;
+	}
+	
+.product_price{
+	float:left;
+	width:184px;
+	}
+	
+.list_price{
+	padding:0 0 3px 0;
+	margin:0;
+	line-height:100%;
+	font:normal 14px Arial, Helvetica, sans-serif;
+	color:#7a7a7b;
+	text-decoration:line-through;
+	}
+	
+.our_price{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:normal 17px Arial, Helvetica, sans-serif;
+	color:#003d95;
+	}
+	
+.qty{
+	float:left;
+	width:130px;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#003d95;
+	padding:10px 0 0 2px;
+	}
+	
+.txtbox_small{
+	border:1px solid #c0c0c0;
+	background:#fff;
+	width:34px;
+	height:17px;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#333;
+	padding:3px 3px 0 3px;
+	}
+	
+.retailer{
+	float:right;
+	width:143px;
+	}
+	
+.product_buy{
+	float:left;
+	width:101px;
+	}
+	
+#product_bottom{
+	width:420px;
+	padding:85px 0 0 0;
+	text-align:right;
+	}
+	
+#product_links{
+	padding:0 0 14px 0;
+	}
+	
+#product_links ul{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+#product_links ul li{
+	padding:0 0 0 14px;
+	margin:0;
+	display:inline;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#5d5e63;
+	}
+	
+#product_links ul li a:link, #product_links ul li a:visited{
+	text-decoration:underline;
+	color:#5d5e63;
+	}
+	
+#product_links ul li a:hover{
+	text-decoration:none;
+	}
+	
+#rating{
+	width:420px;
+	text-align:right;
+	font:bold 14px Arial, Helvetica, sans-serif;
+	color:#003d95;
+	}
+
+#tab_outer{
+	border:1px solid #c1c4be;
+	border-top:none;
+	width:686px;
+	margin:0 0 18px 0;
+	}
+	
+#tab_nav{
+	width:686px;
+	border-top:1px solid #c2c2c2;
+	}
+	
+#tab_nav ul{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+#tab_nav ul li{
+	margin:0;
+	float:left;
+	}
+	
+.two_line a:link, .two_line a:visited{
+	text-decoration:none;
+	font:normal 11px "Trebuchet MS";
+	color:#000;
+	background:url(../images/tab_bg.jpg) repeat-x 0 0;
+	height:30px;
+	display:inline-block;
+	padding:8px 8px 0 8px;
+	line-height:110%;
+	}
+	
+.two_line a:hover{
+	background:url(../images/tab_bg_hover.jpg) repeat-x 0 0;
+	height:30px;
+	}
+	
+#tab_nav ul#countrytabs_small li.two_line a.selected{
+	background:url(../images/tab_bg_hover.jpg) repeat-x 0 0;
+	height:30px;
+	}
+	
+#tab_nav ul#countrytabs_small li.one_line a.selected{
+	background:url(../images/tab_bg_hover.jpg) repeat-x 0 0;
+	height:26px;
+	}
+	
+.one_line a:link, .one_line a:visited{
+	text-decoration:none;
+	font:normal 11px "Trebuchet MS";
+	color:#000;
+	background:url(../images/tab_bg.jpg) repeat-x 0 0;
+	height:26px;
+	display:inline-block;
+	padding:12px 8px 0 8px;
+	line-height:110%;
+	}
+	
+.one_line a:hover{
+	background:url(../images/tab_bg_hover.jpg) repeat-x 0 0;
+	height:26px;
+	}
+	
+.tab_nav_divider{
+	background:url(../images/tab_divider.jpg) no-repeat 0 0;
+	width:2px;
+	height:38px;
+	float:left;
+	}
+	
+#tab_content{
+	width:646px;
+	padding:28px 20px 8px 20px;
+	}
+	
+.tab_content_cell{
+	float:left;
+	width:120px;
+	margin:0 11px 0 0;
+	}
+	
+.tab_content_cell_last{
+	float:left;
+	width:120px;
+	}
+	
+.tab_content_pic{
+	padding:0 0 10px 10px;
+	margin:0;
+	line-height:120%;
+	color:#5d5e63;
+	}
+	
+.tab_content_text{
+	padding:0 0 10px 0;
+	margin:0;
+	line-height:120%;
+	color:#5d5e63;
+	}
+
+#other_products_outer{
+	border:1px solid #c1c4be;
+	width:687px;
+	margin:0 0 24px 0;
+	}	
+	
+#other_products_left{
+	float:left;
+	width:135px;
+	border-right:1px solid #c1c4be;
+	background:#fff url(../images/other_bg.jpg) repeat-x 0 0;
+	padding:6px 0 0 0;
+	}
+	
+#other_products_left p{
+	font:bold 12px "Trebuchet MS";
+	padding:0 0 6px 0;
+	margin:0;
+	line-height:100%;
+	color:#003d95;
+	text-align:center;
+	}
+	
+#other_products_right{
+	float:left;
+	width:540px;
+	padding:0 0 0 9px;
+	}
+	
+.other_products{
+	width:132px;
+	float:left;
+	}
+	
+.other_product_pic{
+	padding:7px 0 5px 0;
+	margin:0;
+	line-height:100%;
+	text-align:center;
+	}
+	
+.other_product_name{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	text-align:center;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#0067b1;
+	}
+	
+.other_product_name a:link, .other_product_name a:visited{
+	text-decoration:none;
+	color:#0067b1;
+	}
+	
+.other_product_name a:hover{
+	text-decoration:underline;
+	}
+	
+.other_product_price{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	text-align:center;
+	font:normal 12px Arial, Helvetica, sans-serif;
+	color:#373737;
+	}
+	
+#footer_outer{
+	width:940px;
+	background-color:#fff;
+	padding:0 0 40px 0;
+	}
+	
+#footer{
+	background-color:#949494;
+	width:940px;
+	padding:7px 0 7px 0;
+	}
+	
+#footer ul{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	text-align:center;
+	}
+	
+#footer ul li{
+	padding:0 36px 0 0;
+	margin:0;
+	display:inline;
+	font:normal 11px "Trebuchet MS";
+	}
+	
+#footer ul li a:link, #footer ul li a:visited{
+	text-decoration:none;
+	color:#fff;
+	}
+	
+#footer ul li a:hover{
+	text-decoration:underline;
+	}
+	
+#footer .lastnav_footer{
+	font-style:normal;
+	padding:0;
+	}
+	
+#footer_bottom{
+	background:url(../images/footer_bottom_bg.jpg) repeat-x 0 0;
+	height:15px;
+	}
+
+#product_list{
+	border:1px solid #c1c4be;
+	width:685px;
+	background:#fff url(../images/tab_bg_hover.jpg) repeat-x 0 0;
+	}
+	
+#product_list_heading{
+	width:657px;
+	border-bottom:1px solid #c1c4be;
+	padding:16px 0 16px 28px;
+	}
+	
+#product_list_heading_right{
+	float:right;
+	width:270px;
+	padding:10px 0 0 0;
+	}
+	
+#product_list_heading_right ul{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	}
+	
+#product_list_heading_right ul li{
+	padding:0 20px 0 0;
+	margin:0;
+	display:inline;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#60a82e;
+	}
+	
+#product_list_heading_right ul li a:link, #product_list_heading_right ul li a:visited{
+	text-decoration:underline;
+	color:#60a82e;
+	}
+	
+#product_list_heading_right ul li a:hover{
+	text-decoration:none;
+	}
+	
+#product_list_content{
+	width:645px;
+	padding:40px 20px 20px 20px;
+	}
+
+.product_list_row{
+	width:645px;
+	padding:0 0 25px 0;
+	}
+	
+.product_list_cell{
+	float:left;
+	width:210px;
+	text-align:center;
+	}
+	
+.product_pic{
+	padding:0 0 6px 0;
+	margin:0;
+	line-height:100%;
+	}
+	
+.product_name{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#005da6;
+	}
+	
+.product_name a:link, .product_name a:visited{
+	text-decoration:none;
+	color:#005da6;
+	}
+
+.product_name a:hover{
+	text-decoration:underline;
+	}	
+	
+.product_list_price{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:normal 11px Arial, Helvetica, sans-serif;
+	color:#717276;
+	text-decoration:line-through;
+	}
+	
+.product_our_price{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:bold 11px Arial, Helvetica, sans-serif;
+	color:#005ca4;
+	}
+	
+#product_list_text{
+	width:663px;
+	padding:30px 12px 30px 12px;
+	}
+	
+#product_list_text p{
+	padding:0 0 18px 0;
+	margin:0;
+	line-height:130%;
+	color:#737373;
+	}
+	
+#bodyarea_home{
+	background:#fff url(../images/bodyarea_bg.jpg) no-repeat 0 0;
+	width:890px;
+	padding:22px 25px 0 25px;
+	}
+	
+#content_top{
+	width:890px;
+	padding:0 0 12px 0;
+	}
+	
+#content_topleft{
+	float:left;
+	width:743px;
+	background:url(../images/humid_bg.jpg) no-repeat top right;
+	padding:0 0 34px 0;
+	}
+	
+#content_topleft_inside{
+	padding:25px 0 0 30px;
+	width:285px;
+	}
+	
+#content_topleft_inside p{
+	padding:0 0 15px 0;
+	margin:0;
+	color:#5d5e63;
+	line-height:190%;
+	}
+	
+.more{
+	text-align:right;
+	padding:0 60px 0 0;
+	}
+
+#content_topright{
+	float:right;
+	width:147px;
+	}
+	
+#content_topright p{
+	padding:0 0 4px 0;
+	margin:0;
+	line-height:100%;
+	}
+
+.content{
+	background:#fff url(../images/content_bg.jpg) repeat-x 0 0;
+	width:830px;
+	padding:18px 30px 20px 30px;
+	}
+
+#content_row{
+	width:830px;
+	padding:10px 0 20px 0;
+	}
+	
+.prev_next{
+	float:left;
+	width:14px;
+	padding:40px 0 0 0;
+	}
+	
+.content_cell{
+	width:160px;
+	float:left;
+	text-align:center;
+	}
+	
+.content_product_pic{
+	padding:0 0 5px 0;
+	margin:0;
+	line-height:100%;
+	}
+	
+.content_product_name{
+	padding:0;
+	margin:0;
+	line-height:100%;
+	font:bold 12px Arial, Helvetica, sans-serif;
+	color:#8a8a8c;
+	}
+	
+.content_product_name a:link, .content_product_name a:visited{
+	text-decoration:none;
+	color:#8a8a8c;
+	}
+	
+.content_product_name a:hover{
+	text-decoration:underline;
+	}
+
+.content_text{
+	padding:0 0 18px 0;
+	margin:0;
+	line-height:130%;
+	color:#737373;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
