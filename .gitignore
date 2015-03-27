@@ -133,3 +133,5 @@ media/
 !app/design/frontend/default/guardian/
 !skin/frontend/default/guardian/
 !app/code/local/
+.DS_STORE
+email/
